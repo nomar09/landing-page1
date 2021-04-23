@@ -1,5 +1,5 @@
 {
-  "name": "vacation",
+  "name": "landing-page1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -38,13 +38,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nomar09/vacation.git"
+    "url": "git+https://github.com/nomar09/landing-page1.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nomar09/vacation/issues"
+    "url": "https://github.com/nomar09/landing-page1/issues"
   },
-  "homepage": "https://github.com/nomar09/vacation#readme"
+  "homepage": "https://github.com/nomar09/landing-page1#readme"
 }
