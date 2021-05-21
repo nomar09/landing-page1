@@ -1,22 +1,44 @@
+.btn {
+  background: $mainBlue;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 1.2rem;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: bold;
 
-
-.btn{
-  background:$mainBlue;
-  color:#fff;  
-  text-decoration:none;
-  padding: .75rem 1.2rem;
-  display:inline-block; 
-
-  &--orange{
-      background-color: $mainOrange;
+  &--orange {
+    background-color: $mainOrange;
   }
 
-  &--large{
-     
-     padding: 1.1rem 1.9rem; 
+  &--purple {
+    background-color: $mainPurple;
+  }
 
-     @mixin atSmall{
-      font-size:1.25rem;
-     }
+  &--purple:hover {
+    background-color: $mainLightPurple;
+  }
+
+  &--large {
+    padding: 9px 25px;
+    max-width: 632px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 35px;
+    position: relative;
+    @mixin atSmall {
+      font-size: 28px;
+    }
+  }
+
+  &__headline {
+    display: inline-block;
+    font-weight: bolder;
+  }
+
+  &__sub-headline {
+    display: block;
+    font-size: 16px;
+    opacity: 0.7;
   }
 }
