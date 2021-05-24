@@ -146,6 +146,26 @@
         background-color: #dddddd66;
         top: 50%;
         right: 0;
+
+        @mixin atMedium {
+          content: "";
+          position: absolute;
+          width: 58%;
+          height: 3px;
+          background-color: #dddddd66;
+          top: 50%;
+          right: 0;
+        }
+
+        @mixin atLarge {
+          content: "";
+          position: absolute;
+          width: 75%;
+          height: 3px;
+          background-color: #dddddd66;
+          top: 50%;
+          right: 0;
+        }
       }
 
       p.shipping {
