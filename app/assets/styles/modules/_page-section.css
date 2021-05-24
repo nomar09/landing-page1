@@ -171,6 +171,10 @@
     color: #fff;
   }
 
+  &--pink {
+    background-color: $lightPink;
+  }
+
   &--testimonials {
     background-color: #e0e6ef;
     @mixin atLarge {
