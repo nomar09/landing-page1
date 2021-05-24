@@ -1,7 +1,7 @@
 .large-hero {
   display: grid;
   grid-template-columns: 1fr;
-  background: url("assets/images/hero-landing-lg.jp2") top center no-repeat;
+  background: url("assets/images/hero-landing-lg.jpg") top center no-repeat;
   background-size: cover;
   padding-bottom: 70px;
   padding-top: 20px;
