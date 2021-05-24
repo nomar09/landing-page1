@@ -175,12 +175,10 @@
     background-color: $lightPink;
   }
 
-  &--testimonials {
-    background-color: #e0e6ef;
-    @mixin atLarge {
-      background: url("assets/images/testimonials-bg.jpg") top center no-repeat;
-      background-size: cover;
-    }
+  &--beauty {
+    background: url("assets/images/beauty-img.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   &--no-b-padding-until-medium {

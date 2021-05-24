@@ -11,7 +11,6 @@
 @import "modules/_generic-content-container";
 @import "modules/_section-title";
 @import "modules/_feature-product";
-@import "modules/_testimonial";
 @import "modules/_site-footer";
 @import "modules/_site-header";
 @import "modules/_primary-nav";
@@ -20,3 +19,4 @@
 @import "modules/_social-icons";
 @import "modules/_header";
 @import "modules/_page-section-lead";
+@import "modules/_beauty";
