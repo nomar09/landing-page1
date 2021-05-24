@@ -1,0 +1,97 @@
+.feature-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0.625rem;
+
+  & div {
+    padding: 0px 0px;
+
+    @mixin atMedium {
+      padding: 0px 15px;
+    }
+  }
+
+  &__column-6 {
+    grid-column: span 12;
+    @mixin atMedium {
+      grid-column: span 6;
+    }
+    .feature-title {
+      font-family: "Oswald", Helvetica, sans-serif;
+      font-size: 1.75rem;
+      color: #da518d;
+      font-style: italic;
+      font-weight: 700;
+      text-align: center;
+      display: block;
+
+      margin: 0 auto 30px auto;
+      line-height: 1.3em;
+
+      @mixin atMedium {
+        font-family: "Oswald", Helvetica, sans-serif;
+        font-size: 2.625rem;
+        color: #da518d;
+        font-style: italic;
+        font-weight: 700;
+        text-align: center;
+        display: block;
+        max-width: 464.88px;
+        margin: 0 auto 30px auto;
+        line-height: 1.3em;
+      }
+
+      span {
+        color: #3c3c3c;
+        font-weight: 600;
+      }
+    }
+
+    .img-product {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .review-container:first-child {
+      margin-top: 10px;
+    }
+
+    .review-container {
+      background: #fff;
+      padding: 15px 15px;
+      -webkit-box-shadow: 0 0 13px 0 rgb(14 14 14 / 20%);
+      box-shadow: 0 0 13px 0 rgb(14 14 14 / 20%);
+      margin-top: 30px;
+
+      .review-title {
+        font-size: 1rem;
+        font-weight: 800;
+        margin: 0;
+      }
+
+      .review-description {
+        font-size: 1rem;
+        font-weight: 600;
+        font-style: italic;
+      }
+
+      .review-info {
+        margin-top: 15px;
+        font-weight: 700;
+
+        img {
+          vertical-align: top;
+          margin-right: 10px;
+        }
+        img:nth-last-child(2) {
+          margin-left: 10px;
+        }
+
+        span {
+          font-style: italic;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
