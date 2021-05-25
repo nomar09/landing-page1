@@ -1,4 +1,4 @@
-/* .faq-container {
+.faq-container {
   .accordion {
     background-color: #eee;
     color: #444;
@@ -24,9 +24,4 @@
     background-color: white;
     overflow: hidden;
   }
-} */
-
-.test {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
 }
