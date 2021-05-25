@@ -1,27 +1,194 @@
 .faq-container {
-  .accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-  }
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0.625rem;
 
-  .active,
-  .accordion:hover {
-    background-color: #ccc;
-  }
+  &__column-10 {
+    grid-column: span 12;
 
-  .panel,
-  .panel2 {
-    padding: 0 18px;
-    display: none;
-    background-color: white;
-    overflow: hidden;
+    @mixin atMedium {
+      grid-column: 2/12;
+    }
+
+    &--title {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 2rem;
+      margin: 0px 0px;
+
+      @mixin atMedium {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 3.125rem;
+        margin: 0px 0px;
+      }
+    }
+
+    &--description {
+      text-align: center;
+      font-size: 1.125rem;
+      font-weight: 400;
+      margin: 10px 0px 30px 0px;
+
+      @mixin atMedium {
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin: 10px 0px 30px 0px;
+      }
+
+      span {
+        color: #d9518d;
+        text-decoration: underline;
+      }
+    }
+
+    .accordion {
+      background-color: #fff;
+      color: #3d3d3d;
+      cursor: pointer;
+      padding: 15px 10px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+
+      transition: 0.4s;
+
+      margin-top: 10px;
+
+      .caret {
+        background-color: #3d3d3d;
+        height: 0;
+        width: 100%;
+        position: relative;
+        font: normal normal 900 14px/1 "Font Awesome 5 Free";
+        display: block;
+      }
+
+      .caret:before {
+        content: "\f0d7";
+        font-size: 1.5rem;
+        top: -43px;
+        left: 95%;
+        color: #3d3d3d;
+        transition: all 0.5s ease;
+        position: absolute;
+
+        @mixin atSmall {
+          content: "\f0d7";
+          font-size: 1.5rem;
+          top: -32px;
+          left: 95%;
+          color: #3d3d3d;
+          transition: all 0.5s ease;
+          position: absolute;
+        }
+
+        @mixin atMedium {
+          content: "\f0d7";
+          font-size: 2rem;
+          top: -32px;
+          left: 95%;
+          color: #3d3d3d;
+          transition: all 0.5s ease;
+          position: absolute;
+        }
+      }
+    }
+
+    h3 {
+      margin: 0px 0px;
+      padding: 0px 22px;
+      font-size: 1.125rem;
+      font-weight: 600;
+
+      @mixin atSmall {
+        margin: 0px 0px;
+        padding: 0px 22px;
+        font-size: 1.125rem;
+        font-weight: 600;
+      }
+
+      @mixin atMedium {
+        margin: 0px 0px;
+        padding: 0px 22px;
+        font-size: 1.3125rem;
+        font-weight: 600;
+      }
+    }
+
+    .active,
+    .accordion:hover {
+      background-color: #d9518d;
+      color: #fff;
+    }
+
+    .active,
+    .accordion:active {
+      background-color: #d9518d;
+      color: #fff;
+
+      .active,
+      .caret:before {
+        content: "\f0d8";
+        font-size: 1.5rem;
+        top: -43px;
+        left: 95%;
+        color: #fff;
+        transition: all 0.5s ease;
+        position: absolute;
+
+        @mixin atSmall {
+          content: "\f0d8";
+          font-size: 1.5rem;
+          top: -32px;
+          left: 95%;
+          color: #fff;
+          transition: all 0.5s ease;
+          position: absolute;
+        }
+
+        @mixin atMedium {
+          content: "\f0d8";
+          font-size: 2rem;
+          top: -32px;
+          left: 95%;
+          color: #fff;
+          transition: all 0.5s ease;
+          position: absolute;
+        }
+      }
+    }
+
+    .panel {
+      padding: 0 30px;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+      font-size: 0.875rem;
+      font-weight: 400;
+      -webkit-transition: height 0.5s ease-in;
+      -moz-transition: height 0.5s ease-in;
+      -o-transition: height 0.5s ease-in;
+      -ms-transition: height 0.5s ease-in;
+      transition: height 0.5s ease-in;
+
+      @mixin atMedium {
+        padding: 0 30px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+        font-size: 1.125rem;
+        font-weight: 400;
+        -webkit-transition: height 0.5s ease-in;
+        -moz-transition: height 0.5s ease-in;
+        -o-transition: height 0.5s ease-in;
+        -ms-transition: height 0.5s ease-in;
+        transition: height 0.5s ease-in;
+      }
+    }
   }
 }
