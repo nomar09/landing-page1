@@ -1,4 +1,4 @@
-.faq-container {
+/* .faq-container {
   .accordion {
     background-color: #eee;
     color: #444;
@@ -17,10 +17,16 @@
     background-color: #ccc;
   }
 
-  .panel {
+  .panel,
+  .panel2 {
     padding: 0 18px;
     display: none;
     background-color: white;
     overflow: hidden;
   }
+} */
+
+.test {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
