@@ -1,5 +1,7 @@
 import "../styles/styles.css";
 import "lazysizes";
+import "./modules/Accordion.js";
+
 // import MobileMenu from "./modules/MobileMenu";
 // import RevealOnScroll from "./modules/RevealOnScroll";
 // import StickyHeader from "./modules/StickyHeader";

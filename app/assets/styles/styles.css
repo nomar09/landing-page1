@@ -22,3 +22,6 @@
 @import "modules/_beauty";
 @import "modules/_faq";
 @import "modules/_testimonials";
+@import "modules/_font";
+
+/* @import "~font-awesome/scss/font-awesome"; */
