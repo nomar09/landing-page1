@@ -1,19 +1,52 @@
-.site-footer{
-    background-color: $mainBlue;
-    color:#fff;
-    padding:.5rem 0;
-    text-align:center;
+.site-footer {
+  background-color: $footerBg;
+  color: #fff;
 
-    &__text{
-        display:block;
-        margin-bottom:1rem;
-        margin-right:0;
-        font-weight:200;
+  text-align: center;
 
-        @mixin atMedium{
-            display: inline;
-            margin-bottom: 0;
-            margin-right:1.4rem;
-        }
+  .logo-container {
+    margin-bottom: 20px;
+  }
+
+  .site-footer-description {
+    font-size: 0.8125rem;
+    max-width: 807.5px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .site-footer-links {
+    margin: 20px 0;
+    font-size: 0.8125rem;
+    color: #fff;
+
+    a {
+      text-decoration: none;
+      color: #fff;
     }
+
+    a:hover {
+      text-decoration: underline;
+      color: #fff;
+    }
+  }
+
+  &__text {
+    display: block;
+    margin-bottom: 1rem;
+    margin-right: 0;
+    font-weight: 200;
+    font-size: 0.8125rem;
+
+    @mixin atMedium {
+      display: inline;
+      margin-bottom: 0;
+      font-size: 0.8125rem;
+    }
+
+    a {
+      color: #fff;
+    }
+  }
 }

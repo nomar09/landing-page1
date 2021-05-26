@@ -40,10 +40,10 @@ class Modal {
             </div>
 
             <div class="social-icons">
-                <a href="#" class="social-icons__icon"><img src="assets/images/icons/facebook.svg" alt="Facebook"></a>
-                <a href="#" class="social-icons__icon"><img src="assets/images/icons/twitter.svg" alt="Twitter"></a>
-                <a href="#" class="social-icons__icon"><img src="assets/images/icons/instagram.svg" alt="Instagram"></a>
-                <a href="#" class="social-icons__icon"><img src="assets/images/icons/youtube.svg" alt="YouTube"></a>
+                <a href="https://www.webprojecthelper.com/" class="social-icons__icon"><img src="assets/images/icons/facebook.svg" alt="Facebook"></a>
+                <a href="https://www.webprojecthelper.com/" class="social-icons__icon"><img src="assets/images/icons/twitter.svg" alt="Twitter"></a>
+                <a href="https://www.webprojecthelper.com/" class="social-icons__icon"><img src="assets/images/icons/instagram.svg" alt="Instagram"></a>
+                <a href="https://www.webprojecthelper.com/" class="social-icons__icon"><img src="assets/images/icons/youtube.svg" alt="YouTube"></a>
             </div>
             </div>
             <div class="modal__close">X</div>
