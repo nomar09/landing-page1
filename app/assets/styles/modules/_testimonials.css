@@ -1,2 +1,111 @@
 .testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0.625rem;
+
+  &-column-12 {
+    grid-column: span 12;
+
+    h2 {
+      font-size: 3.5625;
+      text-transform: none;
+    }
+
+    p {
+      display: block;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5px;
+    }
+
+    span {
+      text-decoration: underline;
+      color: #3d3d3d;
+    }
+  }
+
+  &-column-3 {
+    grid-column: span 12;
+
+    padding: 25px 35px 90px;
+
+    @mixin atMedium {
+      grid-column: span 6;
+      padding: 25px 35px 90px;
+    }
+
+    @mixin atLarger {
+      grid-column: span 4;
+      padding: 25px 35px 90px;
+    }
+
+    img {
+      display: block;
+      margin: 30px auto 0 auto;
+    }
+
+    p {
+      margin: 20px auto 16px auto;
+      font-style: italic;
+      text-align: center;
+      display: block;
+      max-width: 330px;
+    }
+
+    h3 {
+      font-family: "Caveat", Helvetica, sans-serif;
+      font-weight: 700;
+      font-size: 1.8125rem;
+      text-align: center;
+    }
+  }
+
+  &-bg-pink {
+    background: url("assets/images/comment-icon-pink.png") center center
+      no-repeat;
+    h3 {
+      color: #f56ea5;
+    }
+  }
+
+  &-bg-blue {
+    background: url("assets/images/comment-icon-blue.png") center center
+      no-repeat;
+    h3 {
+      color: #7373dd;
+    }
+  }
+
+  &-bg-yellow {
+    background: url("assets/images/comment-icon-yellow.png") center center
+      no-repeat;
+    h3 {
+      color: #e9a947;
+    }
+  }
+
+  &-bg-purple {
+    background: url("assets/images/comment-icon-purple.png") center center
+      no-repeat;
+    h3 {
+      color: #c991e7;
+    }
+  }
+
+  &-bg-green {
+    background: url("assets/images/comment-icon-green.png") center center
+      no-repeat;
+    h3 {
+      color: #4ab8a4;
+    }
+  }
+
+  &-bg-gray-yellow {
+    background: url("assets/images/comment-icon-gray-yellow.png") center center
+      no-repeat;
+    h3 {
+      color: #c1ad7e;
+    }
+  }
 }
