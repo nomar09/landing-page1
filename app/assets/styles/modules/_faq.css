@@ -170,11 +170,8 @@
       overflow: hidden;
       font-size: 0.875rem;
       font-weight: 400;
-      -webkit-transition: height 0.5s ease-in;
-      -moz-transition: height 0.5s ease-in;
-      -o-transition: height 0.5s ease-in;
-      -ms-transition: height 0.5s ease-in;
-      transition: height 0.5s ease-in;
+      transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+        z-index 0s linear 0.01s;
 
       @mixin atMedium {
         padding: 0 30px;
@@ -183,12 +180,15 @@
         overflow: hidden;
         font-size: 1.125rem;
         font-weight: 400;
-        -webkit-transition: height 0.5s ease-in;
-        -moz-transition: height 0.5s ease-in;
-        -o-transition: height 0.5s ease-in;
-        -ms-transition: height 0.5s ease-in;
-        transition: height 0.5s ease-in;
+        transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+          z-index 0s linear 0.01s;
       }
+    }
+
+    .panel:active {
+      display: block;
+      transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+        z-index 0s linear 0.01s;
     }
   }
 }
