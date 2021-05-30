@@ -27,6 +27,25 @@ class RunAfterCompile {
   }
 }
 
+class RunAfterCompileCSS {
+  apply(compiler) {
+    compiler.hooks.done.tap("Copy css", function () {
+      fse.copySync("./app/assets/styles/all", "./docs/assets/styles/all");
+    });
+  }
+}
+
+class RunAfterCompileWebFonts {
+  apply(compiler) {
+    compiler.hooks.done.tap("Copy webfonts", function () {
+      fse.copySync(
+        "./app/assets/styles/webfonts",
+        "./docs/assets/styles/webfonts"
+      );
+    });
+  }
+}
+
 let cssConfig = {
   test: /\.css$/i,
   use: [
@@ -103,7 +122,9 @@ if (currentTask == "build") {
   config.plugins.push(
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({ filename: "styles.[chunkhash].css" }),
-    new RunAfterCompile()
+    new RunAfterCompile(),
+    new RunAfterCompileCSS(),
+    new RunAfterCompileWebFonts()
   );
 }
 
