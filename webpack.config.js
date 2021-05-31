@@ -109,8 +109,8 @@ if (currentTask == "build") {
 
   cssConfig.use.unshift(MiniCssExtractPlugin.loader);
   config.output = {
-    filename: "[name].[chunkhash].js",
-    chunkFilename: "[name].[chunkhash].js",
+    filename: "assets/scripts/[name].[chunkhash].js",
+    chunkFilename: "assets/scripts/[name].[chunkhash].js",
     path: path.resolve(__dirname, "docs"),
   };
   config.mode = "production";
@@ -121,7 +121,9 @@ if (currentTask == "build") {
   };
   config.plugins.push(
     new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin({ filename: "styles.[chunkhash].css" }),
+    new MiniCssExtractPlugin({
+      filename: "styles.[chunkhash].css",
+    }),
     new RunAfterCompile(),
     new RunAfterCompileCSS(),
     new RunAfterCompileWebFonts()
